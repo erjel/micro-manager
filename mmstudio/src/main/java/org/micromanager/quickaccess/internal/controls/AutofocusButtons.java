@@ -20,6 +20,7 @@
 package org.micromanager.quickaccess.internal.controls;
 
 import com.bulenkov.iconloader.IconLoader;
+import com.bulenkov.iconloader.util.ImageLoader;
 import java.awt.Dimension;
 import java.awt.Frame;
 import java.awt.Insets;
@@ -74,7 +75,7 @@ public final class AutofocusButtons extends WidgetPlugin implements SciJavaPlugi
 
    @Override
    public ImageIcon getIcon() {
-      return new ImageIcon(IconLoader.loadFromResource(
+      return new ImageIcon(ImageLoader.loadFromResource(
                "/org/micromanager/icons/binoculars@2x.png"));
    }
 

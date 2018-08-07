@@ -21,6 +21,7 @@
 package org.micromanager.imageflipper;
 
 import com.bulenkov.iconloader.IconLoader;
+import com.bulenkov.iconloader.util.ImageLoader;
 
 import ij.process.ByteProcessor;
 
@@ -290,7 +291,7 @@ public class FlipperConfigurator extends MMFrame implements ProcessorConfigurato
 
    private void processExample() {
       ByteProcessor proc = new ByteProcessor(
-            IconLoader.loadFromResource(EXAMPLE_ICON_PATH));
+            ImageLoader.loadFromResource(EXAMPLE_ICON_PATH));
 
       Image testImage = studio_.data().ij().createImage(proc,
             studio_.data().getCoordsBuilder().build(),

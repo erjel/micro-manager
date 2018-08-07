@@ -20,6 +20,7 @@
 package org.micromanager.quickaccess.internal.controls;
 
 import com.bulenkov.iconloader.IconLoader;
+import com.bulenkov.iconloader.util.ImageLoader;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import org.micromanager.Studio;
@@ -61,7 +62,7 @@ public final class CloseAllButton extends SimpleButtonPlugin implements SciJavaP
 
    @Override
    public ImageIcon getIcon() {
-      return new ImageIcon(IconLoader.loadFromResource(
+      return new ImageIcon(ImageLoader.loadFromResource(
                "/org/micromanager/icons/close_windows@2x.png"));
    }
 

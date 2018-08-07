@@ -20,6 +20,7 @@
 package org.micromanager.quickaccess.internal.controls;
 
 import com.bulenkov.iconloader.IconLoader;
+import com.bulenkov.iconloader.util.ImageLoader;
 import java.awt.Dimension;
 import java.awt.Frame;
 import java.awt.Insets;
@@ -76,7 +77,7 @@ public final class ScriptButton extends WidgetPlugin implements SciJavaPlugin {
 
    @Override
    public ImageIcon getIcon() {
-      return new ImageIcon(IconLoader.loadFromResource(
+      return new ImageIcon(ImageLoader.loadFromResource(
             "/org/micromanager/icons/file@2x.png"));
    }
 

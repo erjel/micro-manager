@@ -18,8 +18,8 @@
 //               INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES.
 
 package org.micromanager.quickaccess.internal.controls;
-
 import com.bulenkov.iconloader.IconLoader;
+import com.bulenkov.iconloader.util.ImageLoader;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import org.micromanager.Studio;
@@ -61,7 +61,7 @@ public final class RefreshButton extends SimpleButtonPlugin implements SciJavaPl
 
    @Override
    public ImageIcon getIcon() {
-      return new ImageIcon(IconLoader.loadFromResource(
+      return new ImageIcon(ImageLoader.loadFromResource(
                "/org/micromanager/icons/arrow_refresh.png"));
    }
 

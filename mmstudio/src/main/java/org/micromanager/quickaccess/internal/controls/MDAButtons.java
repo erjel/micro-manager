@@ -20,6 +20,7 @@
 package org.micromanager.quickaccess.internal.controls;
 
 import com.bulenkov.iconloader.IconLoader;
+import com.bulenkov.iconloader.util.ImageLoader;
 import com.google.common.eventbus.Subscribe;
 import java.awt.Dimension;
 import java.awt.Frame;
@@ -77,7 +78,7 @@ public final class MDAButtons extends WidgetPlugin implements SciJavaPlugin {
 
    @Override
    public ImageIcon getIcon() {
-      return new ImageIcon(IconLoader.loadFromResource(
+      return new ImageIcon(ImageLoader.loadFromResource(
                "/org/micromanager/icons/film@2x.png"));
    }
 
